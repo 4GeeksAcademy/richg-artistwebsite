@@ -1,0 +1,139 @@
+/* ============================
+   Reset & Base Styles
+   ============================ */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fafafa;
+}
+
+/* ============================
+   Navigation Bar
+   ============================ */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a2e;
+    padding: 0 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================
+   Hero / Header
+   ============================ */
+.hero {
+    margin-top: 60px;           /* offset for fixed navbar */
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.85;
+}
+
+/* ============================
+   Sections (About Me, Career, Shows)
+   ============================ */
+.section {
+    padding: 4rem 2rem;
+}
+
+.section:nth-child(even) {
+    background-color: #f2f2f8;
+}
+
+.section-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a2e;
+    border-bottom: 3px solid #1a1a2e;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.section-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+/* ============================
+   Footer
+   ============================ */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1a1a2e;
+    color: #aaa;
+    font-size: 0.9rem;
+}
