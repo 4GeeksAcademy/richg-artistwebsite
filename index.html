@@ -3,62 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rich G - Artist</title>
+    <title>Joe Cool - Artist</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="#" class="nav-logo">Rich G</a>
+            <a href="#" class="nav-logo" aria-label="Joe Cool homepage">Joe Cool</a>
             <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About Me</a></li>
-                <li><a href="#career" class="nav-link">Career</a></li>
-                <li><a href="#shows" class="nav-link">Upcoming Shows</a></li>
+                <li><a href="#about" class="nav-link" aria-label="About Me section">About Me</a></li>
+                <li><a href="#career" class="nav-link" aria-label="Career section">Career</a></li>
+                <li><a href="#shows" class="nav-link" aria-label="Upcoming Shows section">Upcoming Shows</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero / Header Section -->
-    <header class="hero">
-        <h1>Rich G</h1>
+    <header class="hero" role="banner" aria-label="Hero banner">
+        <img src="https://via.placeholder.com/1200x400/1a1a2e/ffffff?text=Hero+Banner" alt="Joe Cool performing on stage under dramatic lighting" class="hero-image">
+        <h1>Joe Cool</h1>
         <p>Artist &amp; Performer</p>
     </header>
 
     <!-- About Me Section -->
-    <section id="about" class="section">
+    <section id="about" class="section" role="region" aria-label="About Me">
         <div class="section-container">
             <h2 class="section-title">About Me</h2>
             <div class="section-content">
+                <img src="https://via.placeholder.com/300x300/2d2d44/cccccc?text=Artist+Portrait" alt="Portrait of Joe Cool, a contemporary artist" class="profile-img">
                 <p>Welcome to my page. Here you can learn more about my journey as an artist, my career highlights, and upcoming performances.</p>
             </div>
         </div>
     </section>
 
     <!-- Career Section -->
-    <section id="career" class="section">
+    <section id="career" class="section" role="region" aria-label="Career highlights">
         <div class="section-container">
             <h2 class="section-title">Career</h2>
             <div class="section-content">
+                <img src="https://via.placeholder.com/400x250/1a1a2e/cccccc?text=Gallery+Exhibition" alt="Joe Cool's artwork displayed at a gallery exhibition" class="career-img">
                 <p>Explore my career milestones, past projects, and artistic evolution.</p>
             </div>
         </div>
     </section>
 
     <!-- Upcoming Shows Section -->
-    <section id="shows" class="section">
+    <section id="shows" class="section" role="region" aria-label="Upcoming shows">
         <div class="section-container">
             <h2 class="section-title">Upcoming Shows</h2>
             <div class="section-content">
+                <img src="https://via.placeholder.com/400x250/2d2d44/cccccc?text=Upcoming+Shows" alt="Flyer for Joe Cool's upcoming shows and performances" class="shows-img">
                 <p>Stay tuned for my upcoming shows and events. Details will be posted here.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Rich G. All rights reserved.</p>
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
+        <p>&copy; 2026 Joe Cool. All rights reserved.</p>
     </footer>
 
 </body>

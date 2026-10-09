@@ -84,6 +84,15 @@ body {
     color: #fff;
 }
 
+.hero-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -121,10 +130,29 @@ body {
     padding-bottom: 0.5rem;
 }
 
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
 .section-content p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     color: #444;
+    flex: 1 1 300px;
+}
+
+/* Section images */
+.profile-img,
+.career-img,
+.shows-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
 }
 
 /* ============================
